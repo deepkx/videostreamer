@@ -1,3 +1,6 @@
+Header.jsx
+
+
 import React, { useState } from 'react'
 import disney from './../assets/images/disney.png'
 
@@ -43,9 +46,9 @@ function Header() {
     ]
   return (
 
-    <div className='flex items-center justify-between p-5'>
+    <div className='flex items-center justify-between p-5 w-full'>
 
-        <div className='flex gap-8 items-center'>
+        <div className='flex gap-8 items-center flex-grow'>
             <img src={disney} alt="disney logo" className='w-[80px] md:w-[115px] object-cover' />
 
             <div className='hidden md:flex gap-8'>
@@ -60,9 +63,9 @@ function Header() {
                 ))}
                 <div className='md:hidden' onClick={()=>setToggle(!toggle)}>
                     <HeaderItem name={''} Icon={HiDotsVertical} />
-                    {toggle? <div className='absolute mt-3 bg-[#121212] border-[1px] border-gray-700 p-3 '>
+                    {toggle? <div className='absolute mt-3 bg-[#121212] border-[1px] border-gray-700 p-3 px-5 py-4'>
                         {menu.map((item,index)=>index>2&& (
-                            <HeaderItem name = {'item.name'} Icon={item.icon}/>
+                            <HeaderItem name = {item.name} Icon={item.icon}/>
                         ))}
 
                     </div> :null }
@@ -70,10 +73,12 @@ function Header() {
             </div>
 
         </div>
-        <img src="https://ps.w.org/user-avatar-reloaded/assets/icon-256x256.png?rev=2540745" alt="" className='W-[40px] h-[40px] rounded-full' />
+        <img src="https://ps.w.org/user-avatar-reloaded/assets/icon-256x256.png?rev=2540745" alt=""
+         className='w-8 h-8 md:w-19 md:h-19 rounded-full absolute right-8' />
 
     </div>
   )
 }
+
 
 export default Header
