@@ -4,18 +4,25 @@ import viteLogo from '/vite.svg'
 import './App.css'
 import Header from './Components/Header'
 import Slider from './Components/Slider'
+import ProductionHouse from './Components/ProductionHouse'
+import GenreMovieList from './Components/GenreMovieList'
 
 function App() {
   const [count, setCount] = useState(0)
 
   return (
-  
-      <div className='flex flex-col item-center'>
-        <Header/>
-        
-        <Slider/>
-      </div>
-    
+
+    <div className='w-full'>
+      <Header />
+
+      <Slider />
+
+      <ProductionHouse />
+
+      <GenreMovieList />
+
+    </div>
+
   )
 }
 

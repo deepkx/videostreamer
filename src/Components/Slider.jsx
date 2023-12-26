@@ -33,12 +33,12 @@ function Slider() {
 
   return (
 
-    <div className='relative justify-center ml-20'>
-      <HiChevronLeft className="hidden md:block text-white text-[30px] absolute mx-4 mt-[150px] cursor-pointer" 
+    <div className='relative justify-center'>
+      <HiChevronLeft className="hidden md:block text-white text-[30px] absolute mx-8 mt-[150px] cursor-pointer" 
          onClick={()=>sliderLeft(elementRef.current)}/>
-      <HiChevronRight className="hidden md:block text-white text-[30px] absolute mx-4 mt-[150px] cursor-pointer right-0"
+      <HiChevronRight className="hidden md:block text-white text-[30px] absolute mx-8 mt-[150px] cursor-pointer right-0"
        onClick={()=>sliderRight(elementRef.current)}/>
-      <div className='flex overflow-x-auto w-full px-10 py-5 mx-auto scrollbar-none scrool-smooth' ref={elementRef}>
+      <div className='flex overflow-x-auto w-full px-16 py-4 mx-auto scrollbar-none scrool-smooth' ref={elementRef}>
         {movieList.map((item, index) => (
           <img
             key={index}

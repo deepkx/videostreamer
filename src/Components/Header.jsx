@@ -74,7 +74,7 @@ function Header() {
 
         </div>
         <img src="https://ps.w.org/user-avatar-reloaded/assets/icon-256x256.png?rev=2540745" alt=""
-         className='w-8 h-8 md:w-19 md:h-19 rounded-full absolute right-8' />
+         className='w-8 h-8 md:w-25 md:h-25 rounded-full absolute right-8' />
 
     </div>
   )
