@@ -1,6 +1,3 @@
-Header.jsx
-
-
 import React, { useState } from 'react'
 import disney from './../assets/images/disney.png'
 

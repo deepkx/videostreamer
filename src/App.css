@@ -42,3 +42,15 @@ body, html {
 .read-the-docs {
   color: #888;
 }
+.first-image-container {
+  display: flex;
+  justify-content: center; /* Center horizontally */
+  align-items: center; /* Center vertically */
+  height: 140px; /* Set the container height */
+  width: 400px;
+}
+
+.first-image {
+  width: 100px; /* Adjust the width as needed */
+ 
+}
